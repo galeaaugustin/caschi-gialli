@@ -11,6 +11,7 @@ import jakarta.persistence.Table;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Entity
 @Table(name = "roles")
 public class Role {
@@ -38,4 +39,11 @@ public class Role {
         this.permissions = permissions;
     }
 
+    public Role(String name, Set<Permission> permissions) {
+        this.name = name;
+        this.permissions = permissions;
+    }
+
+    public Role(){
+    };
 }
