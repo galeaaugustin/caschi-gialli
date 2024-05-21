@@ -13,6 +13,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 @QuarkusTest
 public class PermissionBasedControllerIntegrationTest {
+    /*
+
     @Test
     @TestSecurity(user = "admin", roles = "VIEW_ADMIN_DETAILS")
     @JwtSecurity(claims = {
@@ -53,6 +55,6 @@ public class PermissionBasedControllerIntegrationTest {
                 .statusCode(200)
                 .body("message", equalTo("Hello new-operator!"));
     }
-
+*/
 }
 

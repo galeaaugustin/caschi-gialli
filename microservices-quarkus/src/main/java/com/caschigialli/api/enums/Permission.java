@@ -1,6 +1,7 @@
 package com.caschigialli.api.enums;
 
 public enum Permission {
+    VISITOR,
     VIEW_ADMIN_DETAILS,
     VIEW_USER_DETAILS,
     VIEW_CUSTOMER_DETAILS,
