@@ -1,11 +1,9 @@
 package com.caschigialli.api.controllers;
 
 import com.caschigialli.api.models.Customer;
-import com.caschigialli.api.records.Message;
 import com.caschigialli.api.repositories.CustomerRepository;
 import com.caschigialli.api.services.UserService;
 import io.quarkus.security.identity.SecurityIdentity;
-import io.vertx.ext.web.RequestBody;
 import jakarta.annotation.security.RolesAllowed;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
@@ -15,13 +13,13 @@ import jakarta.ws.rs.core.Response;
 import java.util.Optional;
 
 @Path("/api/customer")
-public class CustomerResourceController {
+public class CustomerResource {
 
     private final UserService userService;
     private final SecurityIdentity securityIdentity;
     private final CustomerRepository customerRepository;
 
-    public CustomerResourceController(UserService userService,
+    public CustomerResource(UserService userService,
                                       SecurityIdentity securityIdentity,
                                       CustomerRepository customerRepository) {
         this.userService = userService;

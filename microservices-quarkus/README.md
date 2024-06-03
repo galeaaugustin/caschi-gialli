@@ -54,3 +54,16 @@ If you want to learn more about building native executables, please consult http
 Easily start your REST Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
++++++++++++++++++++++++++++++++
+Step 1 in Intelij :
++++++++++++++++++++++++++++++++
+mvn package
+
+
+++++++++++++++++++++++++++++++
+Step 2 in PODMAN Commands CLI:
+++++++++++++++++++++++++++++++
+podman build -f src/main/docker/Dockerfile.jvm -t quarkus/caschi-gialle-quarkus-jvm .
+
+podman run -i --rm -p 8080:8080 quarkus/caschi-gialle-quarkus-jvm

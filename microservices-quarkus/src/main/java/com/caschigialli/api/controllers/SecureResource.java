@@ -23,12 +23,12 @@ import jakarta.ws.rs.core.Response;
 import java.util.stream.Collectors;
 
 @Path("/secured")
-public class SecureResourceController {
+public class SecureResource {
 
     private final UserService userService;
     private final SecurityIdentity securityIdentity;
 
-    public SecureResourceController(UserService userService, SecurityIdentity securityIdentity) {
+    public SecureResource(UserService userService, SecurityIdentity securityIdentity) {
         this.userService = userService;
         this.securityIdentity = securityIdentity;
     }

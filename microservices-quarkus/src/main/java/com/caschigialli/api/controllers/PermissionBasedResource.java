@@ -10,11 +10,11 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/permission-based")
-public class PermissionBasedController {
+public class PermissionBasedResource {
 
     private final SecurityIdentity securityIdentity;
 
-    public PermissionBasedController(SecurityIdentity securityIdentity) {
+    public PermissionBasedResource(final SecurityIdentity securityIdentity) {
         this.securityIdentity = securityIdentity;
     }
 

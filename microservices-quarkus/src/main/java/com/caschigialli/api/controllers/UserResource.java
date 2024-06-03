@@ -6,7 +6,7 @@ import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.SecurityContext;
 
 @Path("/api/users")
-public class UserResourceController {
+public class UserResource {
 
     @GET
     @Path("/me")
